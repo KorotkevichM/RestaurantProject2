@@ -17,6 +17,7 @@ protected double dishPrice;
 
     }
 
+
     public MenuCategoryEnum getCategory() {
         return category;
     }
@@ -38,10 +39,10 @@ protected double dishPrice;
     }
 
     public void setDishPrice(double dishPrice) {
-        this.dishPrice = dishPrice;
+        if (dishPrice > 0) {
+            this.dishPrice = dishPrice;
+        }
     }
-
-
 
     @Override
     public String toString() {

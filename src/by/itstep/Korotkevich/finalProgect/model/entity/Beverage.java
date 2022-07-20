@@ -16,7 +16,10 @@ public class Beverage extends Dish{
     }
 
     public void setVolume(int volume) {
-        this.volume = volume;
+
+        if (volume > 0) {
+            this.volume = volume;
+        }
     }
 
     @Override

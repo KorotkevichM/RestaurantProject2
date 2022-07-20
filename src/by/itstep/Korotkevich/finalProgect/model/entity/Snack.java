@@ -12,6 +12,8 @@ public class Snack extends Dish{
         this.amount = amount;
     }
 
+
+
     public int getAmount() {
         return amount;
     }
